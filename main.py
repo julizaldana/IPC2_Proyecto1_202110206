@@ -6,7 +6,7 @@
 import os
 from xml.dom import minidom
 
-
+data = ['','','']
 
 def menu():
     print("---------------------------------------------")
@@ -19,8 +19,8 @@ def menu():
     if respuesta=='1':
         Filename=input('Ingresar nombre de archivo: ')
         file='./'+Filename
-        doc = minidom.parse(file)
-        pacientes = doc.getElementsByTagName("paciente")
+        documentoxml = minidom.parse(file)
+        pacientes = documentoxml.getElementsByTagName("paciente")
         print("----------------------------------------------------------")
         print("            Lista de Pacientes                 ")
         print("----------------------------------------------------------")
@@ -30,6 +30,14 @@ def menu():
     
     elif respuesta=='2':
         exit()
+
+
+#def get_paciente(,documentoxml):
+
+#def crear_reporte(paciente):
+    #text = ""
+    #text += "digraph G {\n\n edge [fontname=\"Helvetica,Arial,san-serif\"]\n"
+    #text +="\"paciente: "+ paciente +"\"\n\n}"
 
 
 
