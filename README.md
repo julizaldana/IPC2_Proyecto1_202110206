@@ -1,4 +1,6 @@
 ## UNIVERSIDAD DE SAN CARLOS DE GUATEMALA
 
-202110206 - Julio Zaldaña
+Repositorio - Proyecto 1 - IPC 2
+Nombre: Julio Alejandro Zaldaña Ríos
+Carnet: 202110206 
 
