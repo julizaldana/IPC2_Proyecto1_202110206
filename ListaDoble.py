@@ -1,12 +1,11 @@
 import os
 
-
 class ListaDoble():
     def __init__(self):
         self.inicio=None
 
     def report(self):
-            #aux=self.inicio
+            ##aux=self.inicio
             text=""
             text+="rankdir=LR; \n "
             text+="node[shape=egg, style=filled, color=khaki, fontname=\"Century Gothic\"];  graph [fontname = \"Century Gothic\"];"
