@@ -26,29 +26,23 @@ def menu():
         print("----------------------------------------------------------")
         for paciente in pacientes:                    
             nombre = paciente.getElementsByTagName("nombre")[0]
-            print("Nombre: " + str(nombre.firstChild.data))
-            opcionpaciente = input("Para crear reporte ingrese 1, para salir ingrese 2: ")
+            edad = paciente.getElementsByTagName("edad")[0]
+            print("Nombre: " + str(nombre.firstChild.data) + "    " + "Edad: " + str(edad.firstChild.data))
 
-            if opcionpaciente=='1':
-                crear_reporte()
-            elif opcionpaciente == '2':
-                exit()
-    
     elif respuesta=='2':
         exit()
 
 
-
-    def crear_reporte():
-        text = ""
-        text += "digraph G {\n\n edge [fontname=\"Helvetica,Arial,san-serif\"]\n"
-        text +="\"pacientes: "+ nombre +"\"\n\n}"
-        nombrearchivo = "reporte_Pacientes"
-        f = open(nombrearchivo+".txt", 'w', encoding='utf-8')
-        f.write(str(text))
-        f.close()
-        os.environ["PATH"] += os.pathsep + 'C:/Program Files/Graphviz/bin/'
-        os.system("dot -Tpng "+ nombrearchivo +".txt -o " + nombrearchivo +".png")
+    #def crear_reporte():
+       #text = ""
+        #text += "digraph G {\n\n edge [fontname=\"Helvetica,Arial,san-serif\"]\n"
+        #text +="\"pacientes: "+ nombre +"\"\n\n}"
+        #nombrearchivo = "reporte_Pacientes"
+        #f = open(nombrearchivo+".txt", 'w', encoding='utf-8')
+        #f.write(str(text))
+        #f.close()
+        #os.environ["PATH"] += os.pathsep + 'C:/Program Files/Graphviz/bin/'
+        #os.system("dot -Tpng "+ nombrearchivo +".txt -o " + nombrearchivo +".png")
 
 
 
